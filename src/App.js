@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import AllProjects from './components/AllProjects';
+import styled from 'styled-components';
+import theme from './theme';
 
-function App() {
+const Title = styled.div`
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+
+  @media only screen and (max-width: ${theme.sizes.tablet}){
+      font-size: 30px;
+      margin: 2rem auto 0rem auto;
+  }
+`
+
+const SubTitle = styled.div`
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+
+  @media only screen and (max-width: ${theme.sizes.tablet}){
+      font-size: 15px;
+      margin: 2rem auto 0rem auto;
+  }
+`
+
+const Wrapper = styled.div`
+  background-color: #8399be;
+  padding-top: 6rem;
+`
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <SubTitle>Laura Castro Venegas</SubTitle>
+      <Title>Projects Portfolio</Title>
+      <AllProjects/>
+    </Wrapper>
   );
 }
 
