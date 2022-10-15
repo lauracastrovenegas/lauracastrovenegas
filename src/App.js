@@ -2,7 +2,7 @@ import AllProjects from './components/AllProjects';
 import styled from 'styled-components';
 import theme from './theme';
 import Navbar from './components/Navbar';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, HashRouter } from 'react-router-dom';
 import Resume from './containers/Resume';
 import Projects from './containers/Projects';
 import About from './containers/About';
@@ -37,20 +37,20 @@ const Left = styled.div`
 const App = () => {
   return (
     
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Wrapper>
         <Left>
           <Navbar />
         </Left>
         <Right>
           <Routes>
-            <Route path="/" element={<About/>} />      
+            <Route exact path="/" element={<About/>} />      
             <Route path="/projects" element={<Projects/>} />
             <Route path="/resume" element={<Resume/>} />
           </Routes>
         </Right>
       </Wrapper>
-    </BrowserRouter>
+    </HashRouter>
    
   );
 }
