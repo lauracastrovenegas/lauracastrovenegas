@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/lauracastrovenegas/static/css/main.49029810.css",
-    "main.js": "/lauracastrovenegas/static/js/main.5c32a503.js",
-    "static/js/787.93719055.chunk.js": "/lauracastrovenegas/static/js/787.93719055.chunk.js",
-    "static/media/commencement.png": "/lauracastrovenegas/static/media/commencement.39a464bee64f6c32f569.png",
-    "static/media/lgbtq.png": "/lauracastrovenegas/static/media/lgbtq.53d63dc1ed09a8401350.png",
-    "static/media/nsop2021.png": "/lauracastrovenegas/static/media/nsop2021.79a7a50e837d15f4c53b.png",
-    "static/media/theshaft.png": "/lauracastrovenegas/static/media/theshaft.90cbf4a6d988a885c872.png",
-    "static/media/cdswebsite.png": "/lauracastrovenegas/static/media/cdswebsite.a9563d4691ad4307eb8c.png",
-    "static/media/listit.png": "/lauracastrovenegas/static/media/listit.eb9cf569be4cd5dfa3be.png",
-    "static/media/booksmart.png": "/lauracastrovenegas/static/media/booksmart.d3175119f4b0036fb1f1.png",
-    "static/media/womenshistory.png": "/lauracastrovenegas/static/media/womenshistory.3712b9bd102d3dd42ac1.png",
-    "static/media/specmobile.png": "/lauracastrovenegas/static/media/specmobile.d207ec4f85e816b95ef8.png",
-    "static/media/lionclubs.png": "/lauracastrovenegas/static/media/lionclubs.0ac6c96045d8ffe6e4e1.png",
-    "static/media/easycal.png": "/lauracastrovenegas/static/media/easycal.5f6db50765b8dc7d0d92.png",
-    "static/media/doordle.png": "/lauracastrovenegas/static/media/doordle.527adb64637e5e86115b.png",
-    "static/media/culpa.png": "/lauracastrovenegas/static/media/culpa.69f5cc973f4605cf9b73.png",
-    "static/media/Laura-Castro-Venegas-Resume-2022.pdf": "/lauracastrovenegas/static/media/Laura-Castro-Venegas-Resume-2022.f2818725c24bacc4f7e8.pdf",
-    "static/media/figmalogo.svg": "/lauracastrovenegas/static/media/figmalogo.4fb9cc9c6f6da1eab2d11557e3a881dd.svg",
-    "index.html": "/lauracastrovenegas/index.html",
-    "main.49029810.css.map": "/lauracastrovenegas/static/css/main.49029810.css.map",
-    "main.5c32a503.js.map": "/lauracastrovenegas/static/js/main.5c32a503.js.map",
-    "787.93719055.chunk.js.map": "/lauracastrovenegas/static/js/787.93719055.chunk.js.map"
+    "main.css": "/static/css/main.49029810.css",
+    "main.js": "/static/js/main.306b2acb.js",
+    "static/js/787.93719055.chunk.js": "/static/js/787.93719055.chunk.js",
+    "static/media/commencement.png": "/static/media/commencement.39a464bee64f6c32f569.png",
+    "static/media/lgbtq.png": "/static/media/lgbtq.53d63dc1ed09a8401350.png",
+    "static/media/nsop2021.png": "/static/media/nsop2021.79a7a50e837d15f4c53b.png",
+    "static/media/theshaft.png": "/static/media/theshaft.90cbf4a6d988a885c872.png",
+    "static/media/cdswebsite.png": "/static/media/cdswebsite.a9563d4691ad4307eb8c.png",
+    "static/media/listit.png": "/static/media/listit.eb9cf569be4cd5dfa3be.png",
+    "static/media/booksmart.png": "/static/media/booksmart.d3175119f4b0036fb1f1.png",
+    "static/media/womenshistory.png": "/static/media/womenshistory.3712b9bd102d3dd42ac1.png",
+    "static/media/specmobile.png": "/static/media/specmobile.d207ec4f85e816b95ef8.png",
+    "static/media/lionclubs.png": "/static/media/lionclubs.0ac6c96045d8ffe6e4e1.png",
+    "static/media/easycal.png": "/static/media/easycal.5f6db50765b8dc7d0d92.png",
+    "static/media/doordle.png": "/static/media/doordle.527adb64637e5e86115b.png",
+    "static/media/culpa.png": "/static/media/culpa.69f5cc973f4605cf9b73.png",
+    "static/media/Laura-Castro-Venegas-Resume-2022.pdf": "/static/media/Laura-Castro-Venegas-Resume-2022.f2818725c24bacc4f7e8.pdf",
+    "static/media/figmalogo.svg": "/static/media/figmalogo.4fb9cc9c6f6da1eab2d11557e3a881dd.svg",
+    "index.html": "/index.html",
+    "main.49029810.css.map": "/static/css/main.49029810.css.map",
+    "main.306b2acb.js.map": "/static/js/main.306b2acb.js.map",
+    "787.93719055.chunk.js.map": "/static/js/787.93719055.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49029810.css",
-    "static/js/main.5c32a503.js"
+    "static/js/main.306b2acb.js"
   ]
 }
