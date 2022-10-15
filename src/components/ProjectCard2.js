@@ -4,7 +4,7 @@ import theme from "../theme";
 const Wrapper = styled.div`
     margin: 1rem;
     transition: transform .2s;
-    background-color: #1c4687;
+    background-color: ${theme.colors.darkBlue};
     padding: 1rem;
 
     a {
