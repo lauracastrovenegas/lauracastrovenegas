@@ -1,18 +1,22 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import theme from '../theme';
-import { all_projects } from '../projects';
+import {all_projects} from '../projects';
 import ProjectCard from './ProjectCard';
 import ProjectCard2 from './ProjectCard2';
 
 const ProjectsContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     width: 80%;
     grid-auto-rows: 1fr;
     margin: 1rem auto;
 
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 1230px){
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    @media only screen and (max-width: 890px){
         grid-template-columns: repeat(1,1fr);
     }
 `;
