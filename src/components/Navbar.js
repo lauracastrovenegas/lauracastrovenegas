@@ -84,7 +84,7 @@ const Link = styled.div`
 const navlinks = [
     {
         title: "About",
-        link: "/lauracastrovenegas"
+        link: "/"
     },
     {
         title: "Projects Portfolio",
