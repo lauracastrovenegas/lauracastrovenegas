@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lauracastrovenegas/static/css/main.49029810.css",
-    "main.js": "/lauracastrovenegas/static/js/main.6ba0a698.js",
+    "main.js": "/lauracastrovenegas/static/js/main.92232139.js",
     "static/js/787.93719055.chunk.js": "/lauracastrovenegas/static/js/787.93719055.chunk.js",
     "static/media/commencement.png": "/lauracastrovenegas/static/media/commencement.39a464bee64f6c32f569.png",
     "static/media/lgbtq.png": "/lauracastrovenegas/static/media/lgbtq.53d63dc1ed09a8401350.png",
@@ -20,11 +20,11 @@
     "static/media/figmalogo.svg": "/lauracastrovenegas/static/media/figmalogo.4fb9cc9c6f6da1eab2d11557e3a881dd.svg",
     "index.html": "/lauracastrovenegas/index.html",
     "main.49029810.css.map": "/lauracastrovenegas/static/css/main.49029810.css.map",
-    "main.6ba0a698.js.map": "/lauracastrovenegas/static/js/main.6ba0a698.js.map",
+    "main.92232139.js.map": "/lauracastrovenegas/static/js/main.92232139.js.map",
     "787.93719055.chunk.js.map": "/lauracastrovenegas/static/js/787.93719055.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49029810.css",
-    "static/js/main.6ba0a698.js"
+    "static/js/main.92232139.js"
   ]
 }
