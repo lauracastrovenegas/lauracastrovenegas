@@ -2,42 +2,56 @@ import AllProjects from './components/AllProjects';
 import styled from 'styled-components';
 import theme from './theme';
 import Navbar from './components/Navbar';
-
-const Title = styled.div`
-  text-align: center;
-  color: white;
-  font-size: 5rem;
-
-  @media only screen and (max-width: ${theme.sizes.tablet}){
-      font-size: 30px;
-      margin: 2rem auto 0rem auto;
-  }
-`
-
-const SubTitle = styled.div`
-  text-align: center;
-  color: white;
-  font-size: 2.5rem;
-  padding-top: 6rem;
-
-  @media only screen and (max-width: ${theme.sizes.tablet}){
-      font-size: 15px;
-      margin: 2rem auto 0rem auto;
-  }
-`
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Resume from './containers/Resume';
+import Projects from './containers/Projects';
+import About from './containers/About';
+import {lazy, Suspense} from 'react';
 
 const Wrapper = styled.div`
-  background-color: #8399be;
+  background-color: ${theme.colors.mainBlue};
+  display:flex;
+
+  @media only screen and (max-width: ${theme.sizes.tablet}){
+    flex-direction: column;
+  }
+`
+
+const Right = styled.div`
+  flex: 1;
+`
+
+const Left = styled.div`
+  width: 20rem;
+  height: 100vh;
+  position: sticky; 
+  top: 0;
+  z-index: 10;
+
+  @media only screen and (max-width: ${theme.sizes.tablet}){
+    width: 100%;
+    height: 2rem;
+  }
 `
 
 const App = () => {
   return (
-    <Wrapper>
-      <Navbar/>
-      <SubTitle>Laura Castro Venegas</SubTitle>
-      <Title>Projects Portfolio</Title>
-      <AllProjects/>
-    </Wrapper>
+    
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Wrapper>
+        <Left>
+          <Navbar />
+        </Left>
+        <Right>
+          <Routes>
+            <Route path="/" element={<About/>} />      
+            <Route path="/projects" element={<Projects/>} />
+            <Route path="/resume" element={<Resume/>} />
+          </Routes>
+        </Right>
+      </Wrapper>
+    </BrowserRouter>
+   
   );
 }
 
