@@ -1,63 +1,121 @@
-import styled from "styled-components"
+import styled from "styled-components/macro"
 import theme from "../theme"
 import React, {useState, useEffect} from 'react';
+import MobileNav from "./MobileNav";
+import SocialMediaLinks from "./SocialMediaLinks";
 
 const Wrapper = styled.div`
-    width: 100vw;
-    height: 0;
-    position: sticky; 
-    top: 0;
-    z-index: 10;
+    width: 100%;
+    height: 100%;
     display: flex;
-    overflow: hidden;
+    background-color: white;
 
-    &.scrolled{
+    a {
+        text-decoration: none;
+        color: black;
         height: fit-content;
-        background-color: #8399be;
-        -webkit-transition: background-color 500ms linear;
-        -ms-transition: background-color 500ms linear;
-        transition: background-color 500ms linear;
+    }
+
+    @media only screen and (max-width: ${theme.sizes.tablet}){
+        padding: 1rem 1rem;
+    }
+
+    @media only screen and (max-width: ${theme.sizes.mobile}){
+        display: none;
     }
 `
 
 const Content = styled.div`
     margin: 1rem auto;
-    color: white;
-    height: 0;
+    display: flex;
+    flex-direction: column;
 
-    &.scrolled{
+    @media only screen and (max-width: ${theme.sizes.tablet}){
+        flex-direction: row;
+        margin: auto 1rem;
         height: fit-content;
-        -webkit-transition: background-color 500ms linear;
-        -ms-transition: background-color 500ms linear;
-        transition: background-color 500ms linear;
+        width: 100%;
     }
 `
 
+const Name = styled.div`
+    color: ${theme.colors.darkBlue};
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5rem;
+
+    text-transform: uppercase;
+
+    @media only screen and (max-width: ${theme.sizes.tablet}){
+       margin: 0;
+    }
+`
+
+const Links = styled.div`
+   margin: 2rem 0rem auto 0rem;
+
+    @media only screen and (max-width: ${theme.sizes.tablet}){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 0rem auto auto;
+    }
+`
+
+const Link = styled.div`
+   margin: 1rem 0rem;
+   font-weight: ${props => props.current ? '700' : '500'};
+   font-size:  1rem;
+   text-transform: uppercase;
+   color: ${props => props.current ? theme.colors.darkBlue :theme.colors.black};
+   transition: transform .2s;
+
+   :hover {
+        color: ${theme.colors.darkBlue};
+        font-weight: 700;
+        transform: scale(1.025);
+   }
+
+    @media only screen and (max-width: ${theme.sizes.tablet}){
+        margin: 0rem 1rem;
+    }
+`
+
+const navlinks = [
+    {
+        title: "About",
+        link: "/"
+    },
+    {
+        title: "Projects Portfolio",
+        link: "/projects"
+    },
+    {
+        title: "Resume",
+        link: "/resume"
+    }
+]
 
 const Navbar = () => {
-    const [scrollY, setScrollY] = useState(0);
-    const threshold = 250;
-
-    function handleScroll() {
-        setScrollY(window.pageYOffset);
-    }
-
-    useEffect(() => {
-        function watchScroll() {
-          window.addEventListener("scroll", handleScroll);
-        }
-        watchScroll();
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-    });
-
     return (
-        <Wrapper className={(scrollY > threshold) ? "scrolled" : ""}>
-            <Content className={(scrollY > threshold) ? "scrolled" : ""}>
-                Laura Castro Venegas | Projects Portfolio
+        <>
+        <MobileNav sections={navlinks}/>
+        <Wrapper>
+            <Content>
+                <a href="/">
+                    <Name>Laura Castro Venegas</Name>
+                </a>
+                <Links>
+                    {navlinks.map((navitem) => (
+                        <a href={navitem.link}>
+                            <Link current={window.location.pathname === navitem.link}>{navitem.title}</Link>
+                        </a>
+                    ))}
+                </Links>
+                <SocialMediaLinks/>
             </Content>
         </Wrapper>
+        </>
     )   
 }
 
