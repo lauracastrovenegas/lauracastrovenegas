@@ -22,7 +22,7 @@ const Content = styled.div`
 
 const GithubButton = ({ link }) => {
     return (
-        <ButtonWrapper link={link}>
+        <ButtonWrapper link={link} light={true}>
             <Content>
                 <Logo><img src={githublogo} /></Logo>
                 <Label>Github Repo</Label>

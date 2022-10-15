@@ -22,7 +22,7 @@ const Content = styled.div`
 
 const FigmaButton = ({ link }) => {
     return (
-        <ButtonWrapper link={link}>
+        <ButtonWrapper link={link} light={true}>
             <Content>
                 <Logo><img src={figmalogo} /></Logo>
                 <Label>Design File</Label>

@@ -11,16 +11,16 @@ const Link = styled.a`
 const Wrapper = styled.div`
     border-radius: 30px;
     display: flex;
-    background-color: ${theme.colors.mainBlue};
+    background-color: ${props => props.light ? theme.colors.mainBlue : theme.colors.darkBlue};
     padding: 0.5rem 1rem;
     height: fit-content;
     min-height: 2rem;
 `
 
-const ButtonWrapper = ({ link, children }) => {
+const ButtonWrapper = ({ link, children, light }) => {
     return (
         <Link href={link} target="_blank">
-            <Wrapper>
+            <Wrapper light={light}>
                 {children}
             </Wrapper>
         </Link>

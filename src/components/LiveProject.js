@@ -7,7 +7,7 @@ const Label = styled.div`
 
 const LiveProjectButton = ({ link }) => {
     return (
-        <ButtonWrapper link={link}>
+        <ButtonWrapper link={link} light={true}>
             <Label>Live Project</Label>
         </ButtonWrapper>
     )
