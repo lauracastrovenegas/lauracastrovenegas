@@ -5,6 +5,10 @@ import theme from '../theme';
 const Content = styled.div`
   padding: 5rem;
   color: white;
+
+  @media only screen and (max-width: ${theme.sizes.tablet}){
+    padding: 1rem;
+  }
 `
 
 const SubTitle = styled.div`
