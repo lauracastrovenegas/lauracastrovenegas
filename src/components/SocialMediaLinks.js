@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import ButtonWrapper from './ButtonWrapper';
 import githublogo from '../images/githublogo.png'
 import linkedinlogo from '../images/linkedinlogo.png'
+import email from '../images/email.png'
 
 const Wrapper = styled.div`
     margin-top: auto;
@@ -24,6 +25,10 @@ const Label = styled.div`
 const Content = styled.div`
     margin: 0rem auto;
     display: flex;
+
+    :hover {
+        cursor: pointer;
+    }
 `
 
 const SocialMediaLinks = () => {
@@ -31,6 +36,7 @@ const SocialMediaLinks = () => {
         <Wrapper>
             <GithubLink/>
             <LinkedInLink/>
+            <EmailLink/>
         </Wrapper>
     )
 }
@@ -54,6 +60,17 @@ const LinkedInLink = () => {
             <Content>
                 <Logo><img src={linkedinlogo} /></Logo>
                 <Label>LinkedIn</Label>
+            </Content>
+        </ButtonWrapper>
+    )
+}
+
+const EmailLink = () => {
+    return (
+        <ButtonWrapper link="mailto:laurasofi1024@gmail.com">
+            <Content>
+                <Logo><img src={email} /></Logo>
+                <Label>Email</Label>
             </Content>
         </ButtonWrapper>
     )
