@@ -68,7 +68,7 @@ const major_projects = [
     "description": ""
   },
   {
-    "project_link": "https://www.columbiaspectator.com/the-eye/2022/09/06/overruled-the-gay-lounge/",
+    "project_link": "https://culpa.info",
     "project_title": "CULPA",
     "github_link": "https://github.com/spectatorpublishing/project-alpha",
     "image_url": culpa,
