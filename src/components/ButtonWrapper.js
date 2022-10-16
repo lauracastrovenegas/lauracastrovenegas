@@ -15,6 +15,12 @@ const Wrapper = styled.div`
     padding: 0.5rem 1rem;
     height: fit-content;
     min-height: 2rem;
+    z-index: 100;
+    transition: transform .2s;
+
+    :hover {
+         transform: scale(1.025);
+    }
 `
 
 const ButtonWrapper = ({ link, children, light }) => {
