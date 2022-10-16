@@ -6,6 +6,7 @@ import email from '../images/email.png'
 
 const Wrapper = styled.div`
     margin-top: auto;
+    padding: 2rem 0rem;
 `
 
 const Logo = styled.div`
@@ -13,7 +14,7 @@ const Logo = styled.div`
 
     img {
         height: 100%;
-        width: 100%
+        object-fit: contain;
     }
 `
 

@@ -81,13 +81,21 @@ const Link = styled.div`
     }
 `
 
+const MediaLinks = styled.div`
+
+@media only screen and (max-width: ${theme.sizes.tablet}){
+    display: none;
+}
+
+`
+
 const navlinks = [
     {
-        title: "About",
+        title: "About Me",
         link: "/"
     },
     {
-        title: "Projects Portfolio",
+        title: "Projects",
         link: "/projects"
     },
     {
@@ -112,7 +120,9 @@ const Navbar = () => {
                         </a>
                     ))}
                 </Links>
-                <SocialMediaLinks/>
+                <MediaLinks>
+                    <SocialMediaLinks/>
+                </MediaLinks>
             </Content>
         </Wrapper>
         </>

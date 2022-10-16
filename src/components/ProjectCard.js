@@ -69,17 +69,7 @@ const Title = styled.div`
     font-weight: 500;
 
     @media only screen and (max-width: ${theme.sizes.tablet}){
-        font-size: 1rem;
-    }
-`;
-
-const Author = styled.div`
-    margin-top: 1rem;
-    font-family: "Inter";
-
-    @media only screen and (max-width: 768px){
-        font-size: 0.875rem;
-        margin-top: 0.5rem;
+        font-size: 1.5rem;
     }
 `;
 
@@ -90,7 +80,6 @@ const ProjectCard = ({ project }) => {
                     <img className="container" src={project.image_url} />
                     <Content className='text'>
                         <Title>{project.project_title}</Title>
-                        <Author>{project.project_authors}</Author>
                         {project.github_link && <GithubButton link={project.github_link}/>}
                         {project.figma_link && <FigmaButton link={project.figma_link} />}
                         {project.project_link && <LiveProjectButton link={project.project_link}/>}

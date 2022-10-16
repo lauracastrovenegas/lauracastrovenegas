@@ -11,7 +11,15 @@ const Container = styled.div`
         display: none;
     }
 
-    text-transform: uppercase;
+    a {
+
+        text-decoration: none;
+        color: ${theme.colors.mainBlue};
+
+        @media only screen and (max-width: ${theme.sizes.tablet}){
+            margin: auto auto;
+        }
+    }
 `;
 
 const Menu = styled.div`
@@ -32,6 +40,8 @@ const MenuItem = styled.div`
     padding: 0.5rem 1rem;
     background: white;
     border: 0.5rem solid ${theme.colors.white};
+    font-weight: ${props => props.current ? '700' : '500'};
+    text-transform: uppercase;
 
     a {
         text-decoration: none;
@@ -56,10 +66,7 @@ const Name = styled.div`
     color: ${theme.colors.mainBlue};
     font-size: 1.25rem;
     font-weight: 600;
-
-    @media only screen and (max-width: ${theme.sizes.tablet}){
-        margin: auto auto;
-    }
+    text-transform: uppercase;
 `
 
 const MobileNav = ({sections}) => {
@@ -95,7 +102,9 @@ const MobileNav = ({sections}) => {
     return (
         <Container>
             <TopBar open={open}>
-                <Name>Laura Castro Venegas</Name>
+                <a href="/">
+                    <Name>Laura Castro Venegas</Name>
+                </a>
                 <HamburgerWrapper>
                     <HamburgerMenu
                         isOpen={open}
