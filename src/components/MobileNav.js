@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import HamburgerMenu from 'react-hamburger-menu';
-import { fallDown as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import theme from '../theme';
-
+import SocialMediaLinks from './SocialMediaLinks';
 
 const Container = styled.div`
     width: 100%;
@@ -13,6 +12,11 @@ const Container = styled.div`
     }
 
     text-transform: uppercase;
+`;
+
+const Menu = styled.div`
+    background-color: white;
+    padding: 0rem 2rem;
 `;
 
 const TopBar = styled.div`
@@ -35,11 +39,17 @@ const MenuItem = styled.div`
         font-size: 1rem;
         margin: 0rem auto;
     }
+
+    :hover {
+        color: ${theme.colors.darkBlue};
+        font-weight: 700;
+        transform: scale(1.025);
+   }
 `;
 
 const HamburgerWrapper = styled.div`
     padding: .75rem;
-    margin-left: -5rem;
+    margin-left: -3rem;
 `;
 
 const Name = styled.div`
@@ -103,17 +113,14 @@ const MobileNav = ({sections}) => {
                 </HamburgerWrapper>
             </TopBar>
             {open && 
-            <div>
-            {sections.map(section => (
+            <Menu>
+                {sections.map(section => (
                     <MenuItem current={window.location.pathname === section.link} onClick={() => handleClick()}>
                         <Link to={section.link}>{section.title}</Link>
                     </MenuItem>
                 ))}    
-            </div>}
-
-            <Menu isOpen={open} width={'100vw'} styles={styles}>
-                
-            </Menu>
+                <SocialMediaLinks/>
+            </Menu>}
         </Container>
     )
 };
