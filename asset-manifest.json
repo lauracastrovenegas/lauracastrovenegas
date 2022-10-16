@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.49029810.css",
-    "main.js": "/static/js/main.bd0e8840.js",
+    "main.js": "/static/js/main.e6f9890d.js",
     "static/js/787.93719055.chunk.js": "/static/js/787.93719055.chunk.js",
     "static/media/commencement.png": "/static/media/commencement.39a464bee64f6c32f569.png",
     "static/media/lgbtq.png": "/static/media/lgbtq.53d63dc1ed09a8401350.png",
     "static/media/nsop2021.png": "/static/media/nsop2021.79a7a50e837d15f4c53b.png",
+    "static/media/laura.jpg": "/static/media/laura.153a3dfdc2bbbfebbb2d.jpg",
     "static/media/theshaft.png": "/static/media/theshaft.90cbf4a6d988a885c872.png",
     "static/media/cdswebsite.png": "/static/media/cdswebsite.a9563d4691ad4307eb8c.png",
     "static/media/listit.png": "/static/media/listit.eb9cf569be4cd5dfa3be.png",
@@ -16,16 +17,14 @@
     "static/media/easycal.png": "/static/media/easycal.5f6db50765b8dc7d0d92.png",
     "static/media/doordle.png": "/static/media/doordle.527adb64637e5e86115b.png",
     "static/media/culpa.png": "/static/media/culpa.69f5cc973f4605cf9b73.png",
-    "static/media/Laura-Castro-Venegas-Resume-2022.pdf": "/static/media/Laura-Castro-Venegas-Resume-2022.f2818725c24bacc4f7e8.pdf",
-    "static/media/email.png": "/static/media/email.c585d6640055d7782f78.png",
     "index.html": "/index.html",
     "static/media/figmalogo.svg": "/static/media/figmalogo.4fb9cc9c6f6da1eab2d11557e3a881dd.svg",
     "main.49029810.css.map": "/static/css/main.49029810.css.map",
-    "main.bd0e8840.js.map": "/static/js/main.bd0e8840.js.map",
+    "main.e6f9890d.js.map": "/static/js/main.e6f9890d.js.map",
     "787.93719055.chunk.js.map": "/static/js/787.93719055.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49029810.css",
-    "static/js/main.bd0e8840.js"
+    "static/js/main.e6f9890d.js"
   ]
 }
