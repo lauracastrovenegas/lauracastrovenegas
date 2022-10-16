@@ -1,13 +1,19 @@
 import figmalogo from '../images/figmalogo.svg'
 import styled from 'styled-components';
 import ButtonWrapper from './ButtonWrapper';
+import theme from '../theme';
 
 const Logo = styled.div`
     height: 1.8rem;
+    margin: auto 0rem;
+
+    @media only screen and (max-width: ${theme.sizes.tablet}){
+        width: 1.8rem;
+    }
 
     img {
         height: 100%;
-        width: 100%
+        object-fit: contain;
     }
 `
 

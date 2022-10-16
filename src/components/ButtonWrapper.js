@@ -2,10 +2,13 @@ import githublogo from '../images/githublogo.png'
 import styled from 'styled-components';
 import theme from '../theme';
 
-const Link = styled.a`
-    text-decoration: none;
-    color: white;
-    margin: 0.25rem 1rem;
+const Link = styled.div`
+    margin-top: 1rem;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 `
 
 const Wrapper = styled.div`
@@ -23,12 +26,14 @@ const Wrapper = styled.div`
     }
 `
 
-const ButtonWrapper = ({ link, children, light }) => {
+const ButtonWrapper = ({ link, children, light, target }) => {
     return (
-        <Link href={link} target="_blank">
-            <Wrapper light={light}>
-                {children}
-            </Wrapper>
+        <Link >
+            <a href={link} target={target ? target : "_blank"}>
+                <Wrapper light={light}>
+                    {children}
+                </Wrapper>
+            </a>
         </Link>
     )
 }

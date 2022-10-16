@@ -1,13 +1,16 @@
 import githublogo from '../images/githublogo.png'
 import styled from 'styled-components';
 import ButtonWrapper from './ButtonWrapper';
+import theme from '../theme';
 
 const Logo = styled.div`
     height: 2rem;
+    width: 2rem;
+    margin: auto 0rem;
 
     img {
         height: 100%;
-        width: 100%
+        object-fit: contain;
     }
 `
 
