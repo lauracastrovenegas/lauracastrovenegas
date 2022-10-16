@@ -7,7 +7,7 @@ const Logo = styled.div`
 
     img {
         height: 100%;
-        object-fit: contain;
+        width: 100%
     }
 `
 
