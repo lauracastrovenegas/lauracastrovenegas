@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import theme from '../theme';
 
 const Wrapper = styled.div`
-  padding: 3rem 1rem;
+  padding: 1rem 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
 `
 
 const Title = styled.div`
+  padding-top: 2rem;
   text-align: center;
   color: white;
   font-size: 4rem;
@@ -20,7 +23,7 @@ const Title = styled.div`
 const SubPageWrapper = ({title, children}) => {
   return (
     <Wrapper>
-        <Title>{title}</Title>
+        {title.length > 0 && <Title>{title}</Title>}
         {children}
     </Wrapper>
   );
