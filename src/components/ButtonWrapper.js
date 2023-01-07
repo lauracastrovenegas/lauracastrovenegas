@@ -9,6 +9,10 @@ const Link = styled.div`
         text-decoration: none;
         color: white;
     }
+
+    @media only screen and (max-width: 1220px){
+        margin-top: 0.75rem;
+    }
 `
 
 const Wrapper = styled.div`
@@ -23,6 +27,11 @@ const Wrapper = styled.div`
 
     :hover {
          transform: scale(1.025);
+    }
+
+    @media only screen and (max-width: 1220px){
+        padding: 0.25rem 0.5rem;
+        min-height: 2rem;
     }
 `
 

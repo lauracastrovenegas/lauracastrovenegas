@@ -15,10 +15,18 @@ const Logo = styled.div`
         height: 100%;
         object-fit: contain;
     }
+
+    @media only screen and (max-width: 1220px){
+        width: 1rem;
+    }
 `
 
 const Label = styled.div`
     margin: auto 1rem;
+
+    @media only screen and (max-width: 1220px){
+        margin: auto 0.5rem;
+    }
 `
 
 const Content = styled.div`
