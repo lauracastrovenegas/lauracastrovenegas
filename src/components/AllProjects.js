@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import theme from '../theme';
-import {all_projects} from '../projects';
+import { all_projects } from '../data/projects';
 import ProjectCard from './ProjectCard';
 import ProjectCard2 from './ProjectCard2';
 
@@ -35,7 +35,7 @@ const TitleText = styled.h1`
     }
 `;
 
-const AllProjects = ({ }) => {
+const AllProjects = () => {
     return (
         <>
             {all_projects.map(project_group => (
