@@ -48,7 +48,7 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 15rem;
+    padding: 1rem;
     margin: 0 auto;
     position: absolute;
     color: white;
@@ -67,9 +67,18 @@ const Content = styled.div`
 const Title = styled.div`
     font-size: 1.5rem;
     font-weight: 500;
+    margin-bottom: 1rem;
 
     @media only screen and (max-width: ${theme.sizes.tablet}){
         font-size: 1.5rem;
+    }
+`;
+
+const Description = styled.div`
+    font-size: 1rem;
+
+    @media only screen and (max-width: 1400px){
+        font-size: 0.75rem;
     }
 `;
 
@@ -80,6 +89,7 @@ const ProjectCard = ({ project }) => {
                     <img className="container" src={project.image_url} />
                     <Content className='text'>
                         <Title>{project.project_title}</Title>
+                        <Description>{project.description}</Description>
                         {project.github_link && <GithubButton link={project.github_link}/>}
                         {project.figma_link && <FigmaButton link={project.figma_link} />}
                         {project.project_link && <LiveProjectButton link={project.project_link}/>}
