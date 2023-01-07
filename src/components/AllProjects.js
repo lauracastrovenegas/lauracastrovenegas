@@ -7,7 +7,7 @@ import ProjectCard2 from './ProjectCard2';
 
 const ProjectsContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     width: 80%;
     grid-auto-rows: 1fr;
     margin: 1rem auto;
@@ -42,7 +42,7 @@ const AllProjects = () => {
                 <>
                     <TitleText>{project_group.title}</TitleText>
                     <ProjectsContainer>
-                        {project_group.title === "Other Projects" ?
+                        {project_group.title === "Other Programming Projects" ?
                             project_group.projects.map(project => (
                                 <ProjectCard2 project={project} />
                             )) :
