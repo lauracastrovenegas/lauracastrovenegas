@@ -11,47 +11,55 @@ import womenshistory from '../images/womenshistory.png'
 import lgbtq from '../images/lgbtq.png'
 import doordle from '../images/doordle.png'
 import nsop2021 from '../images/nsop2021.png'
+import songapp from '../images/songapp.png'
 
 const major_projects = [
-  {
-    "project_title": "Spec Mobile App",
-    "github_link": "https://github.com/spectatorpublishing/spec-mobile-app",
-    "image_url": specmobile,
-    "description": ""
-  },
   {
     "project_link": "https://www.columbiaspectator.com/",
     "project_title": "Columbia Spectator Website",
     "github_link": "https://github.com/spectatorpublishing/ColumbiaSpectatorFusion",
     "image_url": cdswebsite,
-    "description": "Webiste"
+    "description": "The main website for the Columbia Daily Spectator, Columbia University's largest undergraduate student newspaper, with more than 80,000 weekly page views."
+  },
+  {
+    "project_title": "Spec Mobile App",
+    "github_link": "https://github.com/spectatorpublishing/spec-mobile-app",
+    "image_url": specmobile,
+    "description": "The Columbia Daily Spectator Mobile App is a React Native Mobile application version of the Columbia Daily Spectator website."
+  },
+  {
+    "project_link": "https://culpa.info",
+    "project_title": "CULPA",
+    "github_link": "https://github.com/spectatorpublishing/project-alpha",
+    "image_url": culpa,
+    "description": "CULPA (Columbia Underground Listing of Professor Ability), founded in 1997 and relaunched in 2022, is a public platform for students at Columbia University to review courses and professors anonymously."
   },
   {
     "project_link": "https://doordash.columbiaspectator.com/",
     "project_title": "DoordleDash",
     "github_link": "https://github.com/spectatorpublishing/doordle",
     "image_url": doordle,
-    "description": "Webiste"
+    "description": "Wordle-like game developed for DoorDash, which attracted more than 350 daily users and increased DoorDash Student Pass subscriptions among Columbia students by 30%."
   },
   {
     "project_link": "https://lionclubs.info",
     "project_title": "LionClubs",
     "github_link": "https://github.com/spectatorpublishing/Clubs-2020",
     "image_url": lionclubs,
-    "description": "Webiste"
+    "description": "LionClubs is a platform where students can explore official and unofficial student organizations at Barnard and Columbia."
   },
   {
     "figma_link": "https://www.figma.com/file/YpCxirYonq54XBNBdL7OXN/Booksmart?node-id=0%3A1&t=zyMNhWnyt6fEqWJ9-1",
     "project_title": "Booksmart",
     "github_link": "https://github.com/lauracastrovenegas/Booksmart",
     "image_url": booksmart,
-    "description": "Mobile App",
+    "description": "University Marketplace is a one-stop shop for college students to buy and sell their textbooks and supplies to other college students within their university.",
   },
   {
     "project_title": "ListIt",
-    "github_link": "Lilienne Shore Kilgore-Brown",
+    "github_link": "https://github.com/lauracastrovenegas/comsw4170-final-project",
     "image_url": listit,
-    "description": "Mobile App",
+    "description": "ListIt is a mobile app for creating, sharing, and discovering lists. Users have full creative reign over their lists and can keep track of anything from movies starring Timothee Chalamet to their favorite sinks in NYC.",
     "figma_link": "https://github.com/lauracastrovenegas/comsw4170-final-project"
   },
   {
@@ -59,38 +67,37 @@ const major_projects = [
     "project_title": "theShaft",
     "github_link": "https://github.com/spectatorpublishing/NewShaft",
     "image_url": theshaft,
-    "description": ""
+    "description": "TheShaft is a campus-wide web app that allows students to explore the housing options at Columbia and Barnard and use the Housing Lottery Predictor to weigh their options."
   },
   {
-    "project_link": "https://culpa.info",
-    "project_title": "CULPA",
-    "github_link": "https://github.com/spectatorpublishing/project-alpha",
-    "image_url": culpa,
-    "description": ""
-  }
+    "project_title": "UI Design Sample React Project",
+    "github_link": "https://github.com/lauracastrovenegas/ui-design-react-app",
+    "image_url": songapp,
+    "description": 'This project is a sample react app for Professor Smith\'s UI Design React Lecture. Each branch of this repository is a "version" of the project corresponding to the steps taken in the lecture to create this app.'
+  },
 ];
 
 const design_projects = [
+  {
+    "project_title": "EasyCal",
+    "image_url": easycal,
+    "description": "A 'single-page' web application with multiple organizational features — such as a calendar, an assignment tracker, and an automated pacer timeline feature that helps the student know when they should be working on what — that can be found in one centralized place.",
+    "figma_link": "https://www.figma.com/file/6v2pSMRLS2p0UqeaRJI8hL/EasyCal---UI-Design-Individual-Project?node-id=0%3A1"
+  },
+  {
+    "project_title": "ListIt",
+    "github_link": "https://github.com/lauracastrovenegas/comsw4170-final-project",
+    "image_url": listit,
+    "description": "ListIt is a mobile app for creating, sharing, and discovering lists. Users have full creative reign over their lists and can keep track of anything from movies starring Timothee Chalamet to their favorite sinks in NYC.",
+    "figma_link": "https://github.com/lauracastrovenegas/comsw4170-final-project"
+  },
   {
     "project_title": "Booksmart",
     "figma_link": "https://www.figma.com/file/YpCxirYonq54XBNBdL7OXN/Booksmart?node-id=0%3A1&t=zyMNhWnyt6fEqWJ9-1",
     "github_link": "https://github.com/lauracastrovenegas/Booksmart",
     "image_url": booksmart,
-    "description": "Mobile App",
-  },
-  {
-    "project_title": "EasyCal",
-    "image_url": easycal,
-    "description": "Design Project",
-    "figma_link": "https://www.figma.com/file/6v2pSMRLS2p0UqeaRJI8hL/EasyCal---UI-Design-Individual-Project?node-id=0%3A1"
-  },
-  {
-    "project_title": "ListIt",
-    "github_link": "Lilienne Shore Kilgore-Brown",
-    "image_url": listit,
-    "description": "Mobile App",
-    "figma_link": "https://github.com/lauracastrovenegas/comsw4170-final-project"
-  },
+    "description": "University Marketplace is a one-stop shop for college students to buy and sell their textbooks and supplies to other college students within their university. Students can also upload any resources such as Textbook PDFs and study guides that students in need can access.",
+  }
 ]
 
 const special_editions = [
@@ -171,15 +178,19 @@ const misc_projects = [
 
 export const all_projects = [
   {
-    title: "Major Projects",
+    title: "Major Programming Projects",
     projects: major_projects
   },
   {
-    title: "Special Edition Websites",
+    title: "Design Projects",
+    projects: design_projects
+  },
+  {
+    title: "Columbia Spectator Special Edition Websites",
     projects: special_editions
   },
   {
-    title: "Other Projects",
+    title: "Other Programming Projects",
     projects: misc_projects
   }
 ]
