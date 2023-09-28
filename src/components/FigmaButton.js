@@ -6,13 +6,15 @@ import theme from '../theme';
 const Logo = styled.div`
     height: 1.8rem;
     margin: auto 0rem;
+    border-radius: 0;
 
     @media only screen and (max-width: ${theme.sizes.tablet}){
         width: 1.8rem;
     }
 
     img {
-        border-radius: 0px;
+        border: none;
+        border-radius: 0;
         height: 100%;
         object-fit: contain;
     }

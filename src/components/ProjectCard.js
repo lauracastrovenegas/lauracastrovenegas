@@ -62,6 +62,10 @@ const Content = styled.div`
     right: 0;
     z-index: 5;
 
+    img {
+        border-radius: 0px;
+    }
+
     @media only screen and (max-width: ${theme.sizes.mobile}){
         width: 15rem;
     }
