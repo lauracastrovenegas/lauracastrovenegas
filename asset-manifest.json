@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.49029810.css",
-    "main.js": "/static/js/main.f0529d29.js",
+    "main.js": "/static/js/main.533097ff.js",
     "static/media/commencement.png": "/static/media/commencement.39a464bee64f6c32f569.png",
     "static/media/lgbtq.png": "/static/media/lgbtq.53d63dc1ed09a8401350.png",
     "static/media/nsop2021.png": "/static/media/nsop2021.79a7a50e837d15f4c53b.png",
-    "static/media/laura.jpg": "/static/media/laura.153a3dfdc2bbbfebbb2d.jpg",
+    "static/media/salsa.png": "/static/media/salsa.ab214f874b6f54bf3fa8.png",
     "static/media/theshaft.png": "/static/media/theshaft.90cbf4a6d988a885c872.png",
+    "static/media/laura.JPG": "/static/media/laura.ab48f7b8dd71825a77f5.JPG",
     "static/media/cdswebsite.png": "/static/media/cdswebsite.a9563d4691ad4307eb8c.png",
     "static/media/listit.png": "/static/media/listit.eb9cf569be4cd5dfa3be.png",
     "static/media/booksmart.png": "/static/media/booksmart.d3175119f4b0036fb1f1.png",
     "static/media/womenshistory.png": "/static/media/womenshistory.3712b9bd102d3dd42ac1.png",
     "static/media/specmobile.png": "/static/media/specmobile.d207ec4f85e816b95ef8.png",
     "static/media/lionclubs.png": "/static/media/lionclubs.0ac6c96045d8ffe6e4e1.png",
+    "static/media/accessibility.png": "/static/media/accessibility.d72b0c504e7e04c9e201.png",
     "static/media/easycal.png": "/static/media/easycal.5f6db50765b8dc7d0d92.png",
     "static/media/doordle.png": "/static/media/doordle.527adb64637e5e86115b.png",
     "static/media/culpa.png": "/static/media/culpa.69f5cc973f4605cf9b73.png",
@@ -20,10 +22,10 @@
     "index.html": "/index.html",
     "static/media/figmalogo.svg": "/static/media/figmalogo.4fb9cc9c6f6da1eab2d11557e3a881dd.svg",
     "main.49029810.css.map": "/static/css/main.49029810.css.map",
-    "main.f0529d29.js.map": "/static/js/main.f0529d29.js.map"
+    "main.533097ff.js.map": "/static/js/main.533097ff.js.map"
   },
   "entrypoints": [
     "static/css/main.49029810.css",
-    "static/js/main.f0529d29.js"
+    "static/js/main.533097ff.js"
   ]
 }
