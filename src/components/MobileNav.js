@@ -79,25 +79,6 @@ const MobileNav = ({sections}) => {
 
     // to fix bug where menu opens where clicking anywhere, style burger
     // but we want to use the other hamburger's icon so make these transparent
-    var styles = {
-        bmBurgerButton: {
-          position: 'fixed',
-          width: '0px',
-          height: '0px',
-          right: '1rem',
-          top: '1rem'
-        },
-        bmBurgerBars: {
-          background: '#00000000'
-        },
-        bmCrossButton: {
-          width: '0px',
-          height: '0px',
-        },
-        bmCross: {
-          background: '#00000000'
-        },
-      }
 
     return (
         <Container>

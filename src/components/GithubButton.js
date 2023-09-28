@@ -1,7 +1,6 @@
 import githublogo from '../images/githublogo.png'
 import styled from 'styled-components';
 import ButtonWrapper from './ButtonWrapper';
-import theme from '../theme';
 
 const Logo = styled.div`
     height: 2rem;
@@ -36,7 +35,7 @@ const GithubButton = ({ link }) => {
     return (
         <ButtonWrapper link={link} light={true}>
             <Content>
-                <Logo><img src={githublogo} /></Logo>
+                <Logo><img src={githublogo} alt="github logo"/></Logo>
                 <Label>Github Repo</Label>
             </Content>
         </ButtonWrapper>

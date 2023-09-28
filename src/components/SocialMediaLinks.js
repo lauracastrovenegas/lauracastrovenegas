@@ -48,7 +48,7 @@ const GithubLink = () => {
     return (
         <ButtonWrapper link="https://github.com/lauracastrovenegas">
             <Content>
-                <Logo><img src={githublogo} /></Logo>
+                <Logo><img src={githublogo} alt="github logo"/></Logo>
                 <Label>Github</Label>
             </Content>
         </ButtonWrapper>
@@ -59,7 +59,7 @@ const LinkedInLink = () => {
     return (
         <ButtonWrapper link="https://www.linkedin.com/in/laura-castro-venegas-7b63b7189">
             <Content>
-                <Logo><img src={linkedinlogo} /></Logo>
+                <Logo><img src={linkedinlogo} alt="linkedin logo"/></Logo>
                 <Label>LinkedIn</Label>
             </Content>
         </ButtonWrapper>
@@ -70,7 +70,7 @@ const EmailLink = () => {
     return (
         <ButtonWrapper link="mailto:laurasofi1024@gmail.com">
             <Content>
-                <Logo><img src={email} /></Logo>
+                <Logo><img src={email} alt="email envelope icon"/></Logo>
                 <Label>Email</Label>
             </Content>
         </ButtonWrapper>

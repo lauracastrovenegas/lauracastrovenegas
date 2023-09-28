@@ -24,7 +24,6 @@ const Resume = () => {
         <embed src="https://docs.google.com/document/d/e/2PACX-1vSAbn3yih-qKpedVZaSgIbbbKim1qdRAvBdC2KkOw94crAE_kkHDkXJfhMXd1ykzo6pmT-MW7D0TlGr/pub?embedded=true"></embed>
       </EmbeddedDoc>
       <DownloadResumeButton/>
-        {/* <iframe src={"https://docs.google.com/document/d/e/2PACX-1vSAbn3yih-qKpedVZaSgIbbbKim1qdRAvBdC2KkOw94crAE_kkHDkXJfhMXd1ykzo6pmT-MW7D0TlGr/pub"} style={{width: '100%', height: '90vh'}}></iframe> */}
     </SubPageWrapper>
   );
 }

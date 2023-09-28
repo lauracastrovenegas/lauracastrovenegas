@@ -5,7 +5,7 @@ import SocialMediaLinks from '../components/SocialMediaLinks';
 import ResumeButton from '../components/ResumeButton';
 import ProjectsButton from '../components/ProjectsButton';
 import DownloadResumeButton from '../components/DownloadResumeButton';
-import laura from '../images/laura.jpg'
+import laura from '../images/laura.JPG'
 
 const Content = styled.div`
   padding: 2rem 2rem;
@@ -59,8 +59,10 @@ const Button = styled.div`
 const ProfilePic = styled.div`
   max-width: 20rem;
   margin: auto auto;
+  border-radius: 15px;
 
   img {
+    border-radius: 15px;
     width: 100%;
     object-fit: contain;
   }
@@ -71,13 +73,13 @@ const About = () => {
     <SubPageWrapper title="About Me">
       <Top>
         <ProfilePic>
-          <img src={laura}/>
+          <img src={laura} alt="Headshot of Laura wearing her light blue Columbia University graduation gown."/>
         </ProfilePic>
         <Content>
           <p>Hello, I'm <b>Laura Castro Venegas</b>!</p>
-          <p>I am a fourth-year student at Columbia University in the School of Engineering and Applied Sciences, majoring in Computer Science on the Applications Track and minoring in Applied Mathematics.</p>
+          <p>I am a master's student at Stanford University, studying Computer Science with a specialization in Human-Computer Interaction.</p>
+          <p>I have a Bachelor of Science from Columbia University in Computer Science with a minor in Applied Mathematics.</p>
           <p>My interests lie in User-Centered Design, Human-Computer Interaction, and Frontend Development. I have extensive experience in Full-Stack Javascript development and spend most of my time working on React and React Native Projects.</p>
-          <p>I am the Head of Engineering at the Columbia Spectator, where I lead the Engineering Team and work as a Full-Stack JavaScript Developer.</p>
         </Content>
       </Top>
       <DesktopOnly>

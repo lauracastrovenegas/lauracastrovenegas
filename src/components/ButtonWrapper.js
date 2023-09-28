@@ -1,4 +1,3 @@
-import githublogo from '../images/githublogo.png'
 import styled from 'styled-components';
 import theme from '../theme';
 
@@ -37,8 +36,8 @@ const Wrapper = styled.div`
 
 const ButtonWrapper = ({ link, children, light, target }) => {
     return (
-        <Link >
-            <a href={link} target={target ? target : "_blank"}>
+        <Link role="button" tabIndex={0}>
+            <a href={link} target={target ? target : "_blank"} rel="noreferrer">
                 <Wrapper light={light}>
                     {children}
                 </Wrapper>

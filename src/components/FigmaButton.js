@@ -12,6 +12,7 @@ const Logo = styled.div`
     }
 
     img {
+        border-radius: 0px;
         height: 100%;
         object-fit: contain;
     }
@@ -38,7 +39,7 @@ const FigmaButton = ({ link }) => {
     return (
         <ButtonWrapper link={link} light={true}>
             <Content>
-                <Logo><img src={figmalogo} /></Logo>
+                <Logo><img src={figmalogo} alt="figma logo"/></Logo>
                 <Label>Design File</Label>
             </Content>
         </ButtonWrapper>

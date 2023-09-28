@@ -6,6 +6,7 @@ const Wrapper = styled.div`
     transition: transform .2s;
     background-color: ${theme.colors.darkBlue};
     padding: 1rem;
+    border-radius: 15px;
 
     a {
         text-decoration: none;

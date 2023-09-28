@@ -1,6 +1,6 @@
 import styled from "styled-components/macro"
 import theme from "../theme"
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import MobileNav from "./MobileNav";
 import SocialMediaLinks from "./SocialMediaLinks";
 

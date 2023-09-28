@@ -1,4 +1,3 @@
-import AllProjects from './components/AllProjects';
 import styled from 'styled-components';
 import theme from './theme';
 import Navbar from './components/Navbar';
@@ -6,7 +5,6 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Resume from './containers/Resume';
 import Projects from './containers/Projects';
 import About from './containers/About';
-import {lazy, Suspense} from 'react';
 
 const Wrapper = styled.div`
   background-color: ${theme.colors.mainBlue};

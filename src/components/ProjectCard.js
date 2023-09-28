@@ -7,12 +7,13 @@ import theme from "../theme";
 const Wrapper = styled.div`
     margin: 1rem;
     transition: transform .2s;
+    border-radius: 15px;
 
     .text {
         display: none;
     }
 
-    :hover{
+    :hover, :focus{
         transform: scale(1.05);
 
         .container {
@@ -31,6 +32,7 @@ const Image = styled.div`
     flex-direction: column;
     margin: auto 0 auto 0;
     position: relative;
+    border-radius: 15px;
 
     width: 100%;   
     height: 100%; 
@@ -39,6 +41,7 @@ const Image = styled.div`
             width: 100%;   
             height: 100%; 
             object-fit: cover;
+            border-radius: 15px;
         }
     }
 `;
@@ -84,9 +87,9 @@ const Description = styled.div`
 
 const ProjectCard = ({ project }) => {
     return (
-        <Wrapper>
+        <Wrapper tabIndex={0}>
                 <Image>
-                    <img className="container" src={project.image_url} />
+                    <img className="container" src={project.image_url} alt="Screenshot of website/app."/>
                     <Content className='text'>
                         <Title>{project.project_title}</Title>
                         <Description>{project.description}</Description>

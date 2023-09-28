@@ -12,9 +12,25 @@ import lgbtq from '../images/lgbtq.png'
 import doordle from '../images/doordle.png'
 import nsop2021 from '../images/nsop2021.png'
 import songapp from '../images/songapp.png'
+import salsa from '../images/salsa.png'
+import accessibility from '../images/accessibility.png'
 
 const major_projects = [
   {
+    "project_link": "https://salsa.lauracastrovenegas.com/",
+    "project_title": "THE SOUNDS OF THE HISPANIC CARIBBEAN",
+    "github_link": "https://github.com/lauracastrovenegas/salsa_final_project",
+    "figma_link": "https://www.figma.com/file/mRp7JONmVXaohYtJPqQbwb/Untitled?type=design&node-id=0%3A1&mode=design&t=A2MmCCLKtR2ljlCd-1",
+    "image_url": salsa,
+    "description": "Interactive website that features a map of the Caribbean with pins that open popups with interviews, sound bytes, and archival images."
+  },{
+    "project_link": "https://accessibility.lauracastrovenegas.com/",
+    "project_title": "Assistive Devices Available For Deaf/Hard-Of-Hearing People",
+    "github_link": "https://github.com/lauracastrovenegas/capstone-project-website",
+    "image_url": accessibility,
+    "figma_link": "https://www.figma.com/file/aBobO5z3PaSG32Xmox1FS5/Assistive-Devices-Website?type=design&node-id=1%3A76&mode=design&t=A2MmCCLKtR2ljlCd-1",
+    "description": "Fully accessible website that includes educational content on assistive devices as well as introductory content on ASL."
+  },{
     "project_link": "https://www.columbiaspectator.com/",
     "project_title": "Columbia Spectator Website",
     "github_link": "https://github.com/spectatorpublishing/ColumbiaSpectatorFusion",
@@ -79,6 +95,20 @@ const major_projects = [
 
 const design_projects = [
   {
+    "project_link": "https://salsa.lauracastrovenegas.com/",
+    "project_title": "THE SOUNDS OF THE HISPANIC CARIBBEAN",
+    "figma_link": "https://www.figma.com/file/mRp7JONmVXaohYtJPqQbwb/Untitled?type=design&node-id=0%3A1&mode=design&t=A2MmCCLKtR2ljlCd-1",
+    "image_url": salsa,
+    "description": "Interactive website that features a map of the Caribbean with pins that open popups with interviews, sound bytes, and archival images."
+  },
+  {
+    "project_link": "https://accessibility.lauracastrovenegas.com/",
+    "project_title": "Assistive Devices Available For Deaf/Hard-Of-Hearing People",
+    "figma_link": "https://www.figma.com/file/aBobO5z3PaSG32Xmox1FS5/Assistive-Devices-Website?type=design&node-id=1%3A76&mode=design&t=A2MmCCLKtR2ljlCd-1",
+    "image_url": accessibility,
+    "description": "Fully accessible website that includes educational content on assistive devices as well as introductory content on ASL."
+  },
+  {
     "project_title": "EasyCal",
     "image_url": easycal,
     "description": "A 'single-page' web application with multiple organizational features — such as a calendar, an assignment tracker, and an automated pacer timeline feature that helps the student know when they should be working on what — that can be found in one centralized place.",
@@ -86,7 +116,6 @@ const design_projects = [
   },
   {
     "project_title": "ListIt",
-    "github_link": "https://github.com/lauracastrovenegas/comsw4170-final-project",
     "image_url": listit,
     "description": "ListIt is a mobile app for creating, sharing, and discovering lists. Users have full creative reign over their lists and can keep track of anything from movies starring Timothee Chalamet to their favorite sinks in NYC.",
     "figma_link": "https://github.com/lauracastrovenegas/comsw4170-final-project"
@@ -94,13 +123,26 @@ const design_projects = [
   {
     "project_title": "Booksmart",
     "figma_link": "https://www.figma.com/file/YpCxirYonq54XBNBdL7OXN/Booksmart?node-id=0%3A1&t=zyMNhWnyt6fEqWJ9-1",
-    "github_link": "https://github.com/lauracastrovenegas/Booksmart",
     "image_url": booksmart,
     "description": "University Marketplace is a one-stop shop for college students to buy and sell their textbooks and supplies to other college students within their university. Students can also upload any resources such as Textbook PDFs and study guides that students in need can access.",
   }
 ]
 
 const special_editions = [
+  {
+    "project_title": "AI Special Edition",
+    "project_link": "https://discourseonai.columbiaspectator.com/",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EBGQL7LVLNF6VETHGRGTU2RFBE.jpg",
+    "description": "",
+    "github_link":"https://github.com/spectatorpublishing/opinion-ai-edition"
+  },
+  {
+    "project_title": "24 Hours on Campus",
+    "project_link": "https://illo2023.columbiaspectator.com/",
+    "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/XSKM555ITJFP7PNOFRHGZ7PK4E.PNG",
+    "description": "",
+    "github_link":"https://github.com/spectatorpublishing/illo-edition-2023"
+  },
   {
     "project_title": "LGBTQ History Month Edition",
     "project_link": "https://lgbtq2022.columbiaspectator.com/",
